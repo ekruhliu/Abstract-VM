@@ -10,14 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "Stack.hpp"
-
-template <typename T>
+#include "Parcer.hpp"
 
 int	main()
 {
-	std::vector<T> stack;
-	
+	Parcer	parcer;
+	bool	working = true;
+
+	while (working)
+	{
+		working = parcer.read_stdin();
+	}
+
+	for(size_t i = 0; i < parcer._stack.size(); i++)
+		std::cout<<parcer._stack[i]<<std::endl;
+
 	return 0;
 }

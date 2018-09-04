@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ekruhliu/git/Abstract_VM/Parcer.cpp
+Parcer.hpp
+/Users/ekruhliu/git/Abstract_VM/Parcer.hpp
+
+/Users/ekruhliu/git/Abstract_VM/Parcer.hpp
+iostream
+-
+string
+-
+regex
+-
+Stack.hpp
+/Users/ekruhliu/git/Abstract_VM/Stack.hpp
+
+/Users/ekruhliu/git/Abstract_VM/Stack.cpp
+Stack.hpp
+/Users/ekruhliu/git/Abstract_VM/Stack.hpp
+
+/Users/ekruhliu/git/Abstract_VM/Stack.hpp
+vector
+-
+iostream
+-
+
+/Users/ekruhliu/git/Abstract_VM/main.cpp
+Parcer.hpp
+/Users/ekruhliu/git/Abstract_VM/Parcer.hpp
+

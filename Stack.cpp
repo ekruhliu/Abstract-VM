@@ -10,4 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
+//#include "Stack.hpp"
+//
+//Stack::Stack() {}
+//
+//Stack::Stack(Stack const &src) { *this = src; }
+//
+//Stack& Stack::operator=(Stack const &rhs) {
+//    static_cast<void>(rhs);
+//    return *this;
+//}
+//
+//Stack::~Stack() {}

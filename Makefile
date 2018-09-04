@@ -5,33 +5,32 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ekruhliu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/08/31 14:49:29 by ekruhliu          #+#    #+#              #
-#    Updated: 2018/08/31 14:49:29 by ekruhliu         ###   ########.fr        #
+#    Created: 2018/09/04 18:56:37 by ekruhliu          #+#    #+#              #
+#    Updated: 2018/09/04 18:56:38 by ekruhliu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FLAGS = clang++ -Wall -Werror -Wextra -O3
-
 NAME = avm
 
-SRC = main.cpp
-
-HEAD =
+SRC = Parcer.cpp main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
+HDRS = Parcer.hpp
+
+FLAGS = clang++ -Wall -Werror -Wextra -O3
+
 all: $(NAME)
 
-$(NAME): $(OBJ) $(HEAD)
-		@ $(FLAGS) -o $(NAME) $(OBJ)
+$(NAME): $(OBJ) $(HDRS)
+	@$(FLAGS) -c $(SRC)
+	@$(FLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp
-		@ $(FLAGS) -o $@ -c $<
 clean:
-		@ rm -rf $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-		@ rm -rf $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
