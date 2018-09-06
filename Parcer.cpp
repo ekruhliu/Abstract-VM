@@ -35,4 +35,8 @@ bool	Parcer::read_stdin()
 	return true;
 }
 
+size_t		Parcer::getSize() { return this->_stack.size(); }
+
+std::string	Parcer::getStack(int i) { return this->_stack[i]; }
+
 Parcer::~Parcer() {}

@@ -22,8 +22,8 @@ int	main()
 		working = parcer.read_stdin();
 	}
 
-	for(size_t i = 0; i < parcer._stack.size(); i++)
-		std::cout<<parcer._stack[i]<<std::endl;
+	for(size_t i = 0; i < parcer.getSize(); i++)
+		std::cout<<parcer.getStack(i)<<std::endl;
 
 	return 0;
 }
